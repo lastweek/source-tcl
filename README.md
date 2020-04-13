@@ -18,7 +18,9 @@ TCL compiler is written in C.
 - `generic/` is the main source code
 	- The core is actually quite neat
 	- No wonder that TCL can be easily integrated into applications
-
+	- Entry point: `tclMain.c`: `Tcl_MainEx()`.
+		- Parse a script
+		- or run like a shell, accept one line at a time, and parse (big while loop)
 
 ### Coding Style
 
